@@ -52,7 +52,7 @@ function Sidebar() {
       </div>
       <div className="sidebar__button">
         <i className="fas fa-plus-circle sidebar__button__icon sidebar__icon-secondary" />
-        <h2 className="sidebar__text sidebar__text--secondary">ADD NEW PLAYLIST</h2>
+        <h2 className="sidebar__text sidebar__text-green">ADD NEW PLAYLIST</h2>
       </div>
     </div>
   );

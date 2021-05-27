@@ -1,9 +1,28 @@
+.sidebar {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgb(237, 237, 237);
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 7rem;
+  padding-bottom: 10rem;
+  &__brand {
+    color: rgb(29, 185, 84);
+    font-size: 1.6rem;
+    font-family: 'Bodoni Moda', serif;
+  }
+}
+
 .sidebar__icon {
   font-size: 12px;
   width: 12px;
   height: 12px;
   color: rgb(130, 129, 129);
   font-weight: medium;
+  margin-right: 1.6rem;
   &-secondary {
     color: rgb(29, 185, 84);
   }
@@ -24,11 +43,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0.5rem 0;
 }
 .sidebar__text {
   font-size: 1.2rem;
   color: rgb(130, 129, 129);
-}
-.sidebar__text--secondary {
-  color: rgb(29, 185, 84);
+  &-green {
+    color: rgb(29, 185, 84);
+  }
+  &-secondary {
+    font-size: 1rem;
+  }
 }
