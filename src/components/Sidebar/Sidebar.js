@@ -7,34 +7,34 @@ function Sidebar() {
       <div className="sidebar__brand">MUSICLY</div>
       <div className="sidebar--top">
         <div className="sidebar__item">
-          <i class="fas fa-home sidebar__icon" />
+          <i className="fas fa-home sidebar__icon" />
           <h2 className="sidebar__text">HOME</h2>
         </div>
         <div className="sidebar__item">
-          <i class="fas fa-search sidebar__icon" />
+          <i className="fas fa-search sidebar__icon" />
           <h2 className="sidebar__text">BROWSE</h2>
         </div>
         <div className="sidebar__item">
-          <i class="fas fa-microphone sidebar__icon" />
+          <i className="fas fa-microphone sidebar__icon" />
           <h2 className="sidebar__text">RADIO</h2>
         </div>
       </div>
       <div className="sidebar--centered">
         <div className="sidebar__text sidebar__text-secondary">YOUR LIBRARY</div>
         <div className="sidebar__item">
-          <i class="far fa-clock sidebar__icon" />
+          <i className="far fa-clock sidebar__icon" />
           <h2 className="sidebar__text">RECENTLY PLAYED</h2>
         </div>
         <div className="sidebar__item">
-          <i class="far fa-heart  sidebar__icon" />
+          <i className="far fa-heart  sidebar__icon" />
           <h2 className="sidebar__text">FAVORITE SONGS</h2>
         </div>
         <div className="sidebar__item">
-          <i class="far fa-user sidebar__icon" />
+          <i className="far fa-user sidebar__icon" />
           <h2 className="sidebar__text">ARTIST</h2>
         </div>
         <div className="sidebar__item">
-          <img src="./images/albums.svg" class=" sidebar__icon" />
+          <img src="./images/albums.svg" className=" sidebar__icon" />
           <h2 className="sidebar__text">ALBUMS</h2>
         </div>
       </div>
