@@ -42,11 +42,13 @@
 }
 
 .sidebar__item {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.7rem 0;
+  padding: 0.8rem 0;
 }
+
 .sidebar__text {
   line-height: 1.2rem;
   font-size: 1.2rem;
@@ -56,5 +58,32 @@
   }
   &-secondary {
     font-size: 1rem;
+  }
+}
+
+.sidebar__item-active {
+  position: relative;
+  .sidebar__text {
+    color: rgb(29, 185, 84);
+  }
+  .sidebar__icon {
+    color: rgb(29, 185, 84);
+  }
+  &::before {
+    content: '';
+    width: 0.4rem;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(29, 185, 84);
+    left: -5rem;
+  }
+  &::after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(89.3deg, #2eba61e7 -99.75%, #ededed 106.01%);
+    left: -5rem;
   }
 }
