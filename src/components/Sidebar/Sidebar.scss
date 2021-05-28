@@ -17,7 +17,6 @@
 }
 
 .sidebar__item {
-  transition: 4s linear;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -38,8 +37,8 @@
     width: 0.4rem;
     height: 100%;
     position: absolute;
-    background-color: rgb(29, 185, 84);
     left: -5rem;
+    background-color: rgb(29, 185, 84);
   }
   &::after {
     content: '';
@@ -55,11 +54,10 @@
 .sidebar__item:hover,
 .sidebar__item:focus {
   position: relative;
-  .sidebar__text {
-    color: rgb(29, 185, 84);
-  }
+  .sidebar__text,
   .sidebar__icon {
     color: rgb(29, 185, 84);
+    transition: linear 0.3s;
   }
 }
 
@@ -77,6 +75,7 @@
   }
 }
 .sidebar__button {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
