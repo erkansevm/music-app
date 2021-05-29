@@ -43,3 +43,19 @@
     opacity: 1;
   }
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.container-top{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.content{
+  display: flex;
+  padding: 3rem 5rem;
+}

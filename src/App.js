@@ -8,12 +8,23 @@ import Featured from './components/Features/Featured';
 function App() {
   return (
     <Router>
-      <Sidebar />
-      <Switch>
-        <Route path="/" />
-      </Switch>
-      <Featured />
-      <Player />
+    <div className="container">
+      <div className="container-top">
+        <Sidebar />
+        <Switch>
+          <Route path="/" />
+        </Switch>
+        <div className="content">
+          <Featured />
+        </div>
+        
+      </div>
+      <div className="container-bot">
+        <Player />
+      </div>
+      
+    </div>
+     
     </Router>
   );
 }
