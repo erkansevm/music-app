@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Sidebar.scss';
 
 function Sidebar() {
+  /* TO ADD SIDEBAR ITEM TO ACTIVE CLASS */
   const location = useLocation();
   useEffect(() => {
     const currentLocation = window.location.href;
@@ -19,7 +20,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__brand">MUSICLY</div>
-      <div className="sidebar--top">
+      <div>
         <Link to="/" className="sidebar__item">
           <i className="fas fa-home sidebar__icon  " />
           <h2 className="sidebar__text">HOME</h2>
@@ -33,7 +34,7 @@ function Sidebar() {
           <h2 className="sidebar__text">RADIO</h2>
         </Link>
       </div>
-      <div className="sidebar--centered">
+      <div>
         <div className="sidebar__text sidebar__text-secondary">YOUR LIBRARY</div>
         <Link to="/recently-played" className="sidebar__item">
           <i className="far fa-clock sidebar__icon" />
@@ -52,7 +53,7 @@ function Sidebar() {
           <h2 className="sidebar__text">ALBUMS</h2>
         </Link>
       </div>
-      <div className="sidebar--bottom">
+      <div>
         <div className="sidebar__text sidebar__text-secondary">PLAYLIST</div>
         <Link to="/playlist" className="sidebar__item">
           <h2 className="sidebar__text">HINDI TOP 50 </h2>

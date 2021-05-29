@@ -1,0 +1,45 @@
+/* TOOLTIP FOR PAGE */
+/* KULLANMADAN ÖNCE FEATURED SCSS DE DEVAMI VAR */
+/* PARENT ELEMENTE POSITON RELATIVE VERMEN LAZIM VE HOVER DA OPACITY : 1  */
+.tooltip {
+  position: absolute;
+  font-size: 12px;
+  top: -4rem;
+  left: 7rem;
+  background: rgb(237, 237, 237);
+  width: 5rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  z-index: 99;
+}
+
+.tooltip::after {
+  content: '';
+  z-index: 99;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  background: rgb(237, 237, 237);
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -0.5rem;
+}
+
+@keyframes tooltip {
+  0% {
+    transform: translateY(+2rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
