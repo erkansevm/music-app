@@ -44,19 +44,20 @@
   }
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   height: inherit;
 }
 
-.container-top{
+.container-top {
   display: flex;
   flex-direction: row;
   height: 100%;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   padding: 3rem 5rem;
+  flex-direction: column;
 }
