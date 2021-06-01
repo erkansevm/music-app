@@ -1,19 +1,19 @@
 .featured {
   &__title {
     display: flex;
-    width: auto;
+    width: fit-content;
     flex-direction: column;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 2rem;
     color: #1c1c1c;
     cursor: pointer;
     position: relative;
     span {
       font-style: normal;
       font-weight: bold;
-      font-size: 12px;
-      line-height: 30px;
+      font-size: 1.2rem;
+      line-height: 3rem;
       color: #727272;
     }
     &:hover,
