@@ -62,3 +62,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.container-bot{
+  position: relative;
+}
