@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   background: rgb(237, 237, 237);
- 
   height: 100%;
   padding: 0 5rem;
   padding-bottom: 10rem;
+
   &__brand {
     color: rgb(29, 185, 84);
     font-size: 1.6rem;
@@ -29,9 +29,11 @@
   }
   .sidebar__icon {
     color: rgb(29, 185, 84);
+    z-index: 2;
   }
   &::before {
     content: '';
+    z-index: 1;
     width: 0.4rem;
     height: 100%;
     position: absolute;
@@ -43,7 +45,7 @@
     width: 50%;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     background: linear-gradient(89.3deg, #2eba61e7 -99.75%, #ededed 106.01%);
     left: -5rem;
   }
@@ -86,6 +88,7 @@
 }
 
 .sidebar__text {
+  z-index: 2;
   line-height: 1.2rem;
   font-size: 1.2rem;
   color: rgb(130, 129, 129);
@@ -95,4 +98,13 @@
   &-secondary {
     font-size: 1rem;
   }
+}
+
+.sidebar__menu {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
 }
