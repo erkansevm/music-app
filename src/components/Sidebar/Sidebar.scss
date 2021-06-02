@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   background: rgb(237, 237, 237);
-
   height: 100%;
   padding: 0 5rem;
   padding-bottom: 10rem;
+
   &__brand {
     color: rgb(29, 185, 84);
     font-size: 1.6rem;
@@ -98,4 +98,13 @@
   &-secondary {
     font-size: 1rem;
   }
+}
+
+.sidebar__menu {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
 }
