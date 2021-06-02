@@ -4,7 +4,11 @@ import './Player.scss';
 function Player() {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  return (
+  return (  
+    <>
+    <div class="player__respo-progress-bar">
+      <div className="player__respo-progress-bar__progress" style={{width:"50%"}}></div>
+    </div>
     <div className="player-container">
       <div className="player">
         <div className="music">
@@ -35,7 +39,8 @@ function Player() {
         <div className="player__time-bar">
           <span className="player__current-time player__time">1:15</span>
           <div className="player__progress-bar">
-            
+            <div className="player__progress-bar__progress" style={{width:"50%"}}></div>
+            <div className="player__progress-bar__head"></div>
           </div>
           <span className="player__max-time player__time">5:00</span>
         </div>
@@ -46,6 +51,7 @@ function Player() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
