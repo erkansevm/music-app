@@ -57,6 +57,7 @@
 }
 .content {
   display: flex;
+  flex-direction: column;
   padding: 3rem 5rem;
   flex-direction: column;
 }
