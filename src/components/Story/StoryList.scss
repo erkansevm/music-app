@@ -7,3 +7,21 @@
   align-items: center;
 }
 
+.arrow{
+  display: none;
+}
+
+
+
+@media screen and (max-width:540px) {
+  .arrow{
+    display: initial;
+    font-size: 3rem;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+      color: rgb(29, 185, 84);
+    }
+  }
+}

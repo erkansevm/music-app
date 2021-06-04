@@ -15,6 +15,12 @@ function StoryList() {
   const afterStory  = currentStory !== storyInfos.length-1 ? <Story src={infos[currentStory+1].src} displayStatus="smallSize"/> : <Story isEmpty={true} displayStatus="smallSize"/>;
   return (
     <div className="story-list">
+      <i onClick={e=> {
+              if (currentStory !== 0) {
+                setCurrentStory(currentStory-1)
+              }
+            }} class="fas fa-chevron-left arrow">
+          </i>
       <div className="story-list__left"onClick={e=> {
         if (currentStory !== 0) {
           setCurrentStory(currentStory-1)
@@ -33,6 +39,12 @@ function StoryList() {
         }
       }}>
           {afterStory}
+          <i onClick={e=> {
+               if (currentStory !== storyInfos.length-1) {
+                setCurrentStory(currentStory+1)
+              }
+            }} class="fas fa-chevron-right arrow">
+          </i>
         </div>
     </div>
   )
