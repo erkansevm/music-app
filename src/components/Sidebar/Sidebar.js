@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Sidebar.scss';
 
 function Sidebar() {
   /* TO ADD SIDEBAR ITEM TO ACTIVE CLASS */
   const location = useLocation();
+  const [sidebar, setSidebar] = useState(true);
 
   useEffect(() => {
     const currentLocation = window.location.href;
@@ -18,10 +19,19 @@ function Sidebar() {
     });
   }, [location]);
 
+  const handleSideBar = () => {
+    setSidebar(!sidebar);
+  };
+
   return (
     <>
-      <div className="sidebar">
-        <div className="sidebar__brand">MUSICLY</div>
+      <div className={`${sidebar ? 'sidebar' : 'sidebar sidebar-active'}`}>
+        <div className="sidebar__brand">
+          <div>MUSICLY</div>
+          <span>
+            <i className={`${sidebar ? 'fas fa-times' : 'fa fa-bars'}`} onClick={handleSideBar} />
+          </span>
+        </div>
         <div>
           <Link to="/" className="sidebar__item">
             <i className="fas fa-home sidebar__icon  " />
@@ -37,7 +47,7 @@ function Sidebar() {
           </Link>
         </div>
         <div>
-          <div className="sidebar__text sidebar__text-secondary">YOUR LIBRARY</div>
+          <div className="sidebar__text-secondary">YOUR LIBRARY</div>
           <Link to="/recently-played" className="sidebar__item">
             <i className="far fa-clock sidebar__icon" />
             <h2 className="sidebar__text">RECENTLY PLAYED</h2>
