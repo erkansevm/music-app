@@ -8,10 +8,6 @@ import StoryList from './components/Story/StoryList';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  const closeMenu = () => {
-    const sidebar = document.getElementsByClassName('sidebar')[0];
-    sidebar.className = 'sidebar  ';
-  };
   return (
     <Router>
       <div className="container">
@@ -20,7 +16,7 @@ function App() {
           <Switch>
             <Route path="/" />
           </Switch>
-          <div className="content" onClick={closeMenu}>
+          <div className="content">
             <Navbar />
             <StoryList />
             <Featured />

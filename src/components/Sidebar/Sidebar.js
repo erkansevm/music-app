@@ -68,12 +68,15 @@ function Sidebar() {
         <div>
           <div className="sidebar__text sidebar__text-secondary">PLAYLIST</div>
           <Link to="/playlist" className="sidebar__item">
+            <i className="far fa-folder sidebar__icon"></i>
             <h2 className="sidebar__text">HINDI TOP 50 </h2>
           </Link>
           <Link to="/playlist" className="sidebar__item">
+            <i className="far fa-folder sidebar__icon"></i>
             <h2 className="sidebar__text">INDIPOP SONGS</h2>
           </Link>
           <Link to="/playlist" className="sidebar__item">
+            <i className="far fa-folder sidebar__icon"></i>
             <h2 className="sidebar__text">ROMANCE SEASON</h2>
           </Link>
         </div>
