@@ -18,7 +18,7 @@ function App() {
           </Switch>
           <div className="content">
             <Navbar />
-            <StoryList/>
+            <StoryList />
             <Featured />
           </div>
         </div>

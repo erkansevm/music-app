@@ -6,11 +6,17 @@
   height: 100%;
   padding: 0 5rem;
   padding-bottom: 10rem;
+  transition: 0.5s ease;
 
   &__brand {
     color: rgb(29, 185, 84);
     font-size: 1.6rem;
     font-family: 'Bodoni Moda', serif;
+    display: flex;
+    flex-direction: row;
+    i {
+      padding-left: 6rem;
+    }
   }
 }
 
@@ -20,6 +26,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0.8rem 0;
+  height: 32px;
 }
 
 .sidebar__item-active {
@@ -97,14 +104,60 @@
   }
   &-secondary {
     font-size: 1rem;
+    height: 16px;
   }
 }
 
-.sidebar__menu {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  top: 1rem;
-  left: 1rem;
-  cursor: pointer;
+//Hamburger
+
+.sidebar-active {
+  padding: 0 2rem;
+  padding-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  .sidebar__brand div {
+    display: none;
+  }
+  .sidebar__icon {
+    margin-right: 0rem;
+  }
+  .sidebar__brand i {
+    padding: 0;
+  }
+  .sidebar__item h2 {
+    opacity: 0;
+    width: 0;
+  }
+
+  .sidebar__text-secondary {
+    opacity: 0;
+    width: 0;
+    height: 16px;
+  }
+  .sidebar__button {
+    width: fit-content;
+    height: 4rem;
+    border: none;
+    h2 {
+      opacity: 0;
+      width: 0;
+    }
+  }
+
+  .sidebar__item-active {
+    position: relative;
+    .sidebar__text {
+      color: rgb(29, 185, 84);
+    }
+    .sidebar__icon {
+      color: rgb(29, 185, 84);
+      z-index: 2;
+    }
+    &::before {
+      content: none;
+    }
+    &::after {
+      content: none;
+    }
+  }
 }
